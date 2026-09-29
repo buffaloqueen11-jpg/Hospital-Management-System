@@ -1,0 +1,11 @@
+[
+    {
+        "prescription_id": "PR001",
+        "patient_id": "P001",
+        "doctor_id": "D001",
+        "medicine": "Paracetamol",
+        "dosage": "500mg",
+        "duration": "3days",
+        "instructions": "Take after meals"
+    }
+]

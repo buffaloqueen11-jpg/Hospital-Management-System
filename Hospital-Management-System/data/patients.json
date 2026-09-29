@@ -1,0 +1,16 @@
+[
+    {
+        "patient_id": "P002",
+        "name": "Dara Rith",
+        "age": "20",
+        "gender": "Male",
+        "phone": "0876484225"
+    },
+    {
+        "patient_id": "P003",
+        "name": "Kol Sol",
+        "age": "21",
+        "gender": "Male",
+        "phone": "0886789563"
+    }
+]

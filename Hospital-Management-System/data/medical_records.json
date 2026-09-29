@@ -1,0 +1,12 @@
+[
+    {
+        "record_id": "R001",
+        "patient_id": "P001",
+        "doctor_id": "D001",
+        "date": "2026-09-24",
+        "symptoms": "Fever",
+        "diagnosis": "Flu",
+        "treatment": "Medicine",
+        "notes": "Rest well"
+    }
+]
