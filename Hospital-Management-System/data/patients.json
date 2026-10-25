@@ -2,9 +2,9 @@
     {
         "patient_id": "P002",
         "name": "Dara Rith",
-        "age": "20",
+        "age": "21",
         "gender": "Male",
-        "phone": "0876484225"
+        "phone": "088567432"
     },
     {
         "patient_id": "P003",
@@ -12,5 +12,33 @@
         "age": "21",
         "gender": "Male",
         "phone": "0886789563"
+    },
+    {
+        "patient_id": "P001",
+        "name": "Dara",
+        "age": "25",
+        "gender": "Male",
+        "phone": "12345678"
+    },
+    {
+        "patient_id": "P004",
+        "name": "Sokha",
+        "age": "30",
+        "gender": "Female",
+        "phone": "012345679"
+    },
+    {
+        "patient_id": "P005",
+        "name": "Vanna",
+        "age": "40",
+        "gender": "Male",
+        "phone": "012345680"
+    },
+    {
+        "patient_id": "P006",
+        "name": "Srey Mom",
+        "age": "28",
+        "gender": "Female",
+        "phone": "012345681"
     }
 ]

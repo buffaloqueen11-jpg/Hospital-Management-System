@@ -6,5 +6,42 @@
         "date": "2026-09-24",
         "time": "09:00",
         "status": "Checked-out"
+    },
+    {
+        "appointment_id": "A002",
+        "patient_id": "P001",
+        "doctor_id": "D001",
+        "date": "2026-10-26",
+        "time": "09:00",
+        "status": "Checked-out"
+    },
+    {
+        "appointment_id": "A003",
+        "patient_id": "P002",
+        "doctor_id": "D002",
+        "date": "2026-10-26",
+        "time": "10:00"
+    },
+    {
+        "appointment_id": "A004",
+        "patient_id": "P003",
+        "doctor_id": "D003",
+        "date": "2026-10-27",
+        "time": "09:30"
+    },
+    {
+        "appointment_id": "A005",
+        "patient_id": "P004",
+        "doctor_id": "D004",
+        "date": "2026-10-27",
+        "time": "11:00",
+        "status": "Checked-out"
+    },
+    {
+        "appointment_id": "A006",
+        "patient_id": "P006",
+        "doctor_id": "D006",
+        "date": "2026-10-30",
+        "time": "09:00"
     }
 ]

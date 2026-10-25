@@ -8,8 +8,17 @@ def validate_input(value, field_name):
 
     return True
 
+PATIENTS_FILE = "data/patients.json"
 PAYMENTS_FILE = "data/payments.json"
 
+def patient_exists(patient_id):
+    patients = load_data(PATIENTS_FILE)
+
+    for patient in patients:
+        if patient["patient_id"] == patient_id:
+            return True
+
+    return False
 
 def load_payments():
     return load_data(PAYMENTS_FILE)
@@ -28,6 +37,10 @@ def add_payment():
     patient_id = input("Enter patient ID: ")
 
     if not validate_input(patient_id, "Patient ID"):
+        return
+
+    if not patient_exists(patient_id):
+        print("Patient not found!")
         return
 
     amount = input("Enter amount: ")
@@ -113,19 +126,59 @@ def search_payment():
 
     raise PaymentNotFoundError("Payment not found.")
 
+
 def update_payment():
     print("\n===== UPDATE PAYMENT =====")
 
     payment_id = input("Enter payment ID: ")
 
+    if not validate_input(payment_id, "Payment ID"):
+        return
+
     payments = load_payments()
 
     for payment in payments:
         if payment["payment_id"] == payment_id:
-            payment["patient_id"] = input("Enter new patient ID: ")
-            payment["amount"] = input("Enter new amount: ")
-            payment["payment_date"] = input("Enter new payment date: ")
-            payment["status"] = input("Enter new status (Paid/Pending): ")
+
+            new_patient_id = input("Enter new patient ID: ")
+
+            if not validate_input(new_patient_id, "Patient ID"):
+                return
+
+            if not patient_exists(new_patient_id):
+                print("Patient not found!")
+                return
+
+            new_amount = input("Enter new amount: ")
+
+            if not validate_input(new_amount, "Amount"):
+                return
+
+            try:
+                new_amount = float(new_amount)
+            except ValueError:
+                print("Amount must be a number!")
+                return
+
+            if new_amount <= 0:
+                print("Amount must be greater than 0!")
+                return
+
+            new_payment_date = input("Enter new payment date: ")
+
+            if not validate_input(new_payment_date, "Payment Date"):
+                return
+
+            new_status = input("Enter new status (Paid/Pending): ")
+
+            if new_status not in ["Paid", "Pending"]:
+                print("Status must be Paid or Pending!")
+                return
+
+            payment["patient_id"] = new_patient_id
+            payment["amount"] = new_amount
+            payment["payment_date"] = new_payment_date
+            payment["status"] = new_status
 
             save_payments(payments)
 
@@ -139,6 +192,9 @@ def delete_payment():
     print("\n===== DELETE PAYMENT =====")
 
     payment_id = input("Enter payment ID: ")
+
+    if not validate_input(payment_id, "Payment ID"):
+        return
 
     payments = load_payments()
 

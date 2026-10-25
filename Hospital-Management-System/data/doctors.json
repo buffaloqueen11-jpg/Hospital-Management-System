@@ -4,5 +4,35 @@
         "name": "Remi",
         "specialty": "Cardiology",
         "phone": "012345678"
+    },
+    {
+        "doctor_id": "D002",
+        "name": "Dr. Dara",
+        "specialty": "Cardiology",
+        "phone": "012345671"
+    },
+    {
+        "doctor_id": "D003",
+        "name": "Dr. Sokha",
+        "specialty": "Pediatrics",
+        "phone": "012345672"
+    },
+    {
+        "doctor_id": "D004",
+        "name": "Dr. Vanna",
+        "specialty": "Neurology",
+        "phone": "012345673"
+    },
+    {
+        "doctor_id": "D005",
+        "name": "Dr. Lina",
+        "specialty": "Dermatology",
+        "phone": "012345674"
+    },
+    {
+        "doctor_id": "D006",
+        "name": "Dr. Rith",
+        "specialty": "General Medicine",
+        "phone": "012345675"
     }
 ]

@@ -221,17 +221,23 @@ def main():
                                     view_payments()
 
                                 elif payment_choice == "3":
-                                    search_payment()
+                                    try:
+                                        search_payment()
+                                    except PaymentNotFoundError as e:
+                                        print(e)
 
                                 elif payment_choice == "4":
-                                    update_payment()
+                                    try:
+                                        update_payment()
+                                    except PaymentNotFoundError as e:
+                                        print(e)
 
                                 elif payment_choice == "5":
                                     try:
                                         delete_payment()
                                     except PaymentNotFoundError as e:
                                         print(e)
-                                                             
+
                                 elif payment_choice == "6":
                                     break
 
@@ -315,7 +321,11 @@ def main():
                                     view_prescriptions()
 
                                 elif prescription_choice == "3":
-                                    update_prescription()
+                                    
+                                    try:
+                                        update_prescription()
+                                    except PrescriptionNotFoundError as e:
+                                        print(e)           
 
                                 elif prescription_choice == "4":
                                     try:
@@ -431,13 +441,22 @@ def main():
                                         view_appointments()
 
                                     elif appointment_choice == "3":
-                                        search_appointment()
+                                        try:
+                                            search_appointment()
+                                        except AppointmentNotFoundError as e:
+                                            print(e)
 
                                     elif appointment_choice == "4":
-                                        update_appointment()
+                                        try:
+                                            update_appointment()
+                                        except AppointmentNotFoundError as e:
+                                            print(e)
 
                                     elif appointment_choice == "5":
-                                        delete_appointment()
+                                        try:
+                                            delete_appointment()
+                                        except AppointmentNotFoundError as e:
+                                            print(e)
 
                                     elif appointment_choice == "6":
                                         break
@@ -464,10 +483,16 @@ def main():
                                         view_payments()
 
                                     elif payment_choice == "3":
-                                        search_payment()
+                                        try:
+                                            search_payment()
+                                        except PaymentNotFoundError as e:
+                                            print(e)
 
                                     elif payment_choice == "4":
-                                        update_payment()
+                                        try: 
+                                            update_payment()
+                                        except PaymentNotFoundError as e: 
+                                            print(e)
 
                                     elif payment_choice == "5":
                                         try:

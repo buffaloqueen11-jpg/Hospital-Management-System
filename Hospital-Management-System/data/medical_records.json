@@ -8,5 +8,45 @@
         "diagnosis": "Flu",
         "treatment": "Medicine",
         "notes": "Rest well"
+    },
+    {
+        "record_id": "R002",
+        "patient_id": "P002",
+        "doctor_id": "D002",
+        "date": "2026-10-25",
+        "symptoms": "Fever",
+        "diagnosis": "Requires evaluation",
+        "treatment": "Medical assessment",
+        "notes": "Sample test data"
+    },
+    {
+        "record_id": "R003",
+        "patient_id": "P003",
+        "doctor_id": "D003",
+        "date": "2026-10-25",
+        "symptoms": "Headache",
+        "diagnosis": "Requires evaluation",
+        "treatment": "Medical assessment",
+        "notes": "Sample test data"
+    },
+    {
+        "record_id": "R004",
+        "patient_id": "P004",
+        "doctor_id": "D004",
+        "date": "2026-10-25",
+        "symptoms": "Skin rash",
+        "diagnosis": "Requires evaluation",
+        "treatment": "Medical assessment",
+        "notes": "Sample test data"
+    },
+    {
+        "record_id": "R005",
+        "patient_id": "P005",
+        "doctor_id": "D005",
+        "date": "2026-10-25",
+        "symptoms": "Cough",
+        "diagnosis": "Requires evaluation",
+        "treatment": "Medical assessment",
+        "notes": "Sample test data"
     }
 ]

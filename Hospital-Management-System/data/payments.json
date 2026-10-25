@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "payment_id": "PAY001",
+        "patient_id": "P001",
+        "amount": 50.0,
+        "payment_date": "2026-10-26",
+        "status": "Paid"
+    },
+    {
+        "payment_id": "PAY002",
+        "patient_id": "P002",
+        "amount": 75.0,
+        "payment_date": "2026-10-26",
+        "status": "Paid"
+    },
+    {
+        "payment_id": "PAY003",
+        "patient_id": "",
+        "amount": "",
+        "payment_date": "",
+        "status": ""
+    },
+    {
+        "payment_id": "PAY004",
+        "patient_id": "P004",
+        "amount": 100.0,
+        "payment_date": "2026-10-27",
+        "status": "Paid"
+    },
+    {
+        "payment_id": "PAY005",
+        "patient_id": "P005",
+        "amount": 80.0,
+        "payment_date": "2026-10-27",
+        "status": "Pending"
+    }
+]

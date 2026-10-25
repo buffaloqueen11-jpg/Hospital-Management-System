@@ -1,6 +1,5 @@
 from storage import load_data, save_data
 
-
 USERS_FILE = "data/users.json"
 
 
@@ -15,8 +14,17 @@ def save_users(users):
 def register():
     print("\n===== REGISTER =====")
 
-    username = input("Enter username: ")
-    password = input("Enter password: ")
+    username = input("Enter username: ").strip()
+
+    if not username:
+        print("Username cannot be empty!")
+        return
+
+    password = input("Enter password: ").strip()
+
+    if not password:
+        print("Password cannot be empty!")
+        return
 
     users = load_users()
 
@@ -25,7 +33,7 @@ def register():
             print("Username already exists!")
             return
 
-    role = input("Enter role (admin/doctor/receptionist): ").lower()
+    role = input("Enter role (admin/doctor/receptionist): ").strip().lower()
 
     if role not in ["admin", "doctor", "receptionist"]:
         print("Invalid role!")
@@ -46,8 +54,12 @@ def register():
 def login():
     print("\n===== LOGIN =====")
 
-    username = input("Enter username: ")
-    password = input("Enter password: ")
+    username = input("Enter username: ").strip()
+    password = input("Enter password: ").strip()
+
+    if not username or not password:
+        print("Username and password cannot be empty!")
+        return None
 
     users = load_users()
 

@@ -22,10 +22,18 @@ def show_report():
     total_amount = 0
 
     for payment in payments:
-        total_amount += float(payment["amount"])
+        try:
+            amount = float(payment.get("amount", 0) or 0)
+            total_amount += amount
+        except (ValueError, TypeError):
+            print(
+                "Warning: Invalid amount in payment",
+                payment.get("payment_id", "Unknown")
+            )
 
     print("Total Patients:", total_patients)
     print("Total Doctors:", total_doctors)
     print("Total Appointments:", total_appointments)
     print("Total Payments:", total_payments)
     print("Total Payment Amount:", total_amount)
+
